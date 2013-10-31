@@ -1,0 +1,737 @@
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+.flashimage {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.flashimage img {
+  width: 900px;
+}
+
+body {
+  padding: 0;
+  background: white;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.7;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+    position:absolute;
+    top:-9999px;
+}
+
+/*.logo {
+  width: 600px;
+  margin: 0 auto;
+}*/
+
+header img {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+}
+
+h2  {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+h3  {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.content {
+  width: 400px;
+  margin: 0 auto;
+}
+
+nav {
+  color: black;
+  width: 400px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+
+.video {
+  width: 400px;
+  margin: 0 auto;
+}
+
+nav ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 400px;
+  display: inline-block;
+}
+
+nav ul li {
+  display: block;
+  float: left;
+  text-align: center;
+  width: 80px;
+}
+
+nav ul li a {
+color: black;
+font-weight: bold;
+display: block;
+text-decoration: none;
+}
+
+nav ul li a.active  {
+text-decoration: underline;
+}
+
+nav a:hover {
+  background: #999999;
+  color: white;
+}
+
+/*nav a:first-child {
+    border-top: none;
+}*/
+
+p   {
+
+}
+
+
+#rightbox  {
+  display: block;
+  width: 400px;
+  margin-top: 20px;
+}
+
+#rightbox2  {
+  display: block;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.leftimages {
+  display: none;
+}
+
+footer  {
+  float: right;
+}
+
+.contactbox {
+    width: 400px;
+    display: block;
+  }
+
+  .contactleft {
+    width: 100px;
+    display: block;
+    float: left;
+    margin-bottom: 20px;
+  }
+
+  .contactleft img {
+    width: 100px;
+  }
+
+  .contacttext {
+    width: 280px;
+    display: block;
+    float: right;
+  }
+
+  .contacttext h4 {
+    display: none;
+  }
+
+#press ul   {
+       margin-top: -22px;
+       width: 400px;
+       padding: 0;
+      list-style-type: none;
+  }
+
+  #press ul li  {
+      width: 290px;
+      display: inline;
+      margin: 0 auto;
+      }
+
+  #press ul li a     {
+       text-indent: 100%;
+       white-space: nowrap;
+       overflow: hidden;
+       height: 160px;
+       width: 290px;
+       margin: 0 auto;
+       display: block;
+       background-image: url('../images/press_sprite.jpg');
+  }
+
+  .huffpo a  {
+       background-position: -18px -752px;
+  }
+
+  .elle a   {
+       background-position: -332px -758px;
+  }
+
+  .buzzfeed a   {
+       background-position: 326px -758px
+  }
+
+  .nymag a  {
+       background-position: -24px -896px;
+  }
+
+  .hungertv a   {
+       background-position: -346px -893px;
+  }
+
+  .karlismyunkle a   {
+       background-position: 334px -890px;
+  }
+
+  .conan a    {
+       background-position: -18px -1080px;
+  }
+
+  .creativeboom a    {
+       background-position: -322px -1062px;
+  }
+
+  .culture24 a   {
+       background-position: 318px -1050px;
+  }
+
+  .wimberly a    {
+       background-position: -26px -1238px;
+  }
+
+  .attitude a   {
+       background-position: -356px -1238px;
+  }
+
+  .attitude {
+    padding: 0px 28px 0px 25px;
+    text-indent: 100%;
+  }
+
+  .laststyleofdefense a   {
+       background-position: 333px -1238px;
+  }
+
+/******************************************
+/* 768px and up
+/*******************************************/
+
+
+
+@media only screen and (min-width: 768px) {
+
+  header img {
+    width: 600px;
+    display: block;
+  }
+
+
+  nav {
+    color: black;
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 600px;
+  }
+
+  nav ul li {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 120px;
+    font-size: 18px;
+  }
+
+  .content {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .leftimages {
+  width: 600px;
+  float: left;
+  margin-bottom: 20px;
+  }
+
+  .leftimages img {
+  width: 290px;
+  height: 232px;
+  float: left;
+  display: inline-block;
+  margin-right: 5px
+  }
+
+.contactbox {
+    margin-bottom: 20px;
+    width: 510px;
+    display: block;
+  }
+  
+
+  .contactleft {
+    width: 140px;
+    display: block;
+    float: left;
+  }
+
+  .contactleft img {
+    width: 140px;
+  }
+
+  .contacttext {
+    width: 330px;
+    display: block;
+    float: right;
+  }
+
+    .contacttext h4 {
+    display: inline;
+  }
+
+  #rightbox  {
+    display: block;
+    width: 600px;
+    margin-top: 10px;
+  }
+
+  #rightbox2 {
+    display: block;
+    width: 600px;
+    margin-top: 40px;
+  }
+
+  .video {
+    width: 580px;
+  }
+
+  iframe  {
+    width: 580px;
+    height: 326px;
+  }
+
+ 
+
+  /*PRESS Ipad version here*/
+
+  #press ul   {
+       margin-top: -22px;
+       width: 600px;
+       padding: 0;
+      list-style-type: none;
+  }
+
+  #press ul li  {
+      float: left;
+      width: 290px;
+      display: inline;
+      margin: 5px 5px 5px 0px;
+      }
+
+  #press ul li a     {
+       text-indent: 100%;
+       white-space: nowrap;
+       overflow: hidden;
+       height: 160px;
+       width: 290px;
+       display: block;
+       background-image: url('../images/press_sprite.jpg');
+  }
+
+  .huffpo a  {
+       background-position: -18px -752px;
+  }
+
+  .elle a   {
+       background-position: -332px -758px;
+  }
+
+  .buzzfeed a   {
+       background-position: 326px -758px
+  }
+
+  .nymag a  {
+       background-position: -24px -896px;
+  }
+
+  .hungertv a   {
+       background-position: -346px -893px;
+  }
+
+  .karlismyunkle a   {
+       background-position: 334px -890px;
+  }
+
+  .conan a    {
+       background-position: -18px -1080px;
+  }
+
+  .creativeboom a    {
+       background-position: -322px -1062px;
+  }
+
+  .culture24 a   {
+       background-position: 318px -1050px;
+  }
+
+  .wimberly a    {
+       background-position: -26px -1238px;
+  }
+
+  .attitude a   {
+       background-position: -356px -1238px;
+  }
+
+  .attitude {
+    padding: 0px 28px 0px 25px;
+    text-indent: 100%;
+  }
+
+  .laststyleofdefense a   {
+       background-position: 333px -1238px;
+  }
+
+
+}
+
+/******************************************
+/* 991px and up
+/*******************************************/
+
+
+
+
+
+@media only screen and (min-width: 991px) {
+
+  header img {
+    width: 700px;
+    display: block;
+  }
+
+
+  nav {
+    color: black;
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  nav ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 700px;
+  }
+
+  nav ul li {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 140px;
+    font-size: 20px;
+  }
+
+  .content {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  .abouttext {
+    width: 510px;
+    float: left;
+    display: block;
+  }
+
+  #rightbox {
+    width: 330px;
+    float: right;
+    display: block;
+    margin-right: 40px;
+    margin-top: 20px;
+  }
+
+  #rightbox2 {
+    width: 330px;
+    float: right;
+    display: block;
+    margin-right: 40px;
+    margin-top: 40px;
+  }
+
+  .leftimages {
+  display: block;
+  width: 510px;
+  float: left;
+  margin-bottom: 20px;
+  }
+
+  .leftimages img {
+  width: 250px;
+  float: left;
+  display: inline-block;
+  margin-right: 5px
+  }
+
+  .contactbox {
+    margin-top: 10px;
+    width: 510px;
+    display: block;
+  }
+
+  .contactleft {
+    width: 140px;
+    display: block;
+    float: left;
+  }
+
+  .contactleft img {
+    width: 140px;
+  }
+
+  .contacttext {
+    width: 330px;
+    display: block;
+    float: right;
+  }
+
+
+  .video {
+    width: 680px;
+  }
+
+  iframe  {
+    width: 680px;
+    height: 382px;
+  }
+
+  //PRESS//
+
+  #press {
+    width: 960px;
+  }
+
+  #press ul   {
+       margin-top: -22px;
+       width: 960px;
+       padding: 0;
+      list-style-type: none;
+  }
+
+  #press ul li  {
+      float: left;
+      width: 310px;
+      display: inline;
+      margin: 5px 5px 5px 0px;
+      }
+
+  #press ul li a     {
+       text-indent: 100%;
+       white-space: nowrap;
+       overflow: hidden;
+       height: 160px;
+       width: 310px;
+       display: block;
+       background-image: url('../images/press_sprite.jpg');
+  }
+
+
+  .huffpo a     {
+       background-position: -18px -8px;
+  }
+
+  .elle a    {
+       background-position: -322px -14px;
+  }
+
+  .buzzfeed a    {
+       background-position: 333px -14px
+  }
+
+  .nymag a    {
+       background-position: -18px -148px;
+  }
+
+  .hungertv a    {
+       background-position: -318px -148px;
+  }
+
+  .karlismyunkle a    {
+       background-position: 334px -146px;
+  }
+
+  .conan a    {
+       background-position: -18px -343px;
+  }
+
+  .creativeboom a    {
+       background-position: -322px -318px;
+  }
+
+  .culture24 a    {
+       background-position: 333px -312px;
+  }
+
+  .wimberly a    {
+       background-position: -34px -496px;
+  }
+
+  .attitude a    {
+       background-position: -338px -496px;
+  }
+
+  .laststyleofdefense a    {
+       background-position: 333px -496px;
+  }
+
+  /*//hover states below here*/
+
+  .huffpo a:hover     {
+       background-position: -18px -752px;
+  }
+
+  .elle a:hover    {
+       background-position: -322px -758px;
+  }
+
+  .buzzfeed a:hover    {
+       background-position: 333px -758px
+  }
+
+  .nymag a:hover    {
+       background-position: -18px -892px;
+  }
+
+  .hungertv a:hover    {
+       background-position: -318px -893px;
+  }
+
+  .karlismyunkle a:hover    {
+       background-position: 334px -890px;
+  }
+
+  .conan a:hover    {
+       background-position: -18px -1088px;
+  }
+
+  .creativeboom a:hover    {
+       background-position: -322px -1062px;
+  }
+
+  .culture24 a:hover    {
+       background-position: 333px -1056px;
+  }
+
+  .wimberly a:hover    {
+       background-position: -34px -1238px;
+  }
+
+  .attitude a:hover    {
+       background-position: -338px -1238px;
+  }
+
+  .attitude {
+    padding: 0px 28px 0px 25px;
+    text-indent: 100%;
+  }
+
+  .laststyleofdefense a:hover    {
+       background-position: 333px -1238px;
+  }
+
+
+
+
+
+}
+
+/*@media only screen and (min-width: 991px) {
+
+    nav {
+      font-size: 1.8em;
+      margin: 0;
+    }
+    
+    nav {
+    color: black;
+    margin: 0 auto;
+    font-size: 1.2em;
+    width: 900px;
+    }
+
+    nav ul {
+      width: 100%;
+    }
+
+    nav ul li {
+    float: left;
+    width: 100px;
+    display: inline;
+    }
+
+    
+    nav li a {
+    display: block;
+    width: 100px;
+    padding: 10px 0px;
+    text-align: center;
+    }
+
+
+    p   {
+    border-style: inset;
+    color: black;
+    border: 2px solid gray;
+    margin: 5px 0 5px 0;
+  }
+
+    .kitten {
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    width: 700px;
+  }
+*/
+
+
+
+
+
+
